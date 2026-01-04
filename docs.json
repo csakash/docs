@@ -10,7 +10,7 @@
   "favicon": "/favicon.svg",
   "navigation": {
     "pages": [
-      "about-me"
+      "/"
     ]
   },
   "logo": {
