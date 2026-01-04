@@ -9,9 +9,7 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "pages": [
-      "/"
-    ]
+    "pages": ["index"]
   },
   "logo": {
     "light": "/logo/light.svg",
