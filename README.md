@@ -1,3 +1,3 @@
-# Hi, I'm Akash
+## Hi, I'm Akash 
 
-### I like to vibe code AI Agents in my free time
+and I like to vibe code AI agents in my free time
