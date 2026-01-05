@@ -9,7 +9,10 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "pages": ["index"]
+    "pages": [
+      "index",
+      "how-to-vibe-code-complex-softwares"
+    ]
   },
   "logo": {
     "light": "/logo/light.png",
