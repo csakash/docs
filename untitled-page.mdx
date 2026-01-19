@@ -1,0 +1,231 @@
+---
+title: "The Missing Layer: Why Context Is the Real Bottleneck in the Age of AI"
+---
+
+Software work is changing. And with it, every aspect of how we build, ship, and iterate needs to change too.
+
+But we are stuck. Not because the models are not good enough. They are. The bottleneck is somewhere else entirely.
+
+## How Software Work Used to Happen
+
+Let me paint the picture of how things worked before this current wave of AI.
+
+Somebody comes up with an idea. Or somebody talks to customers. Or somebody has a problem they want solved. They draft an initial version of it in a document. Not a prototype. Just an ideation document. Raw thoughts on a page.
+
+That document comes to a team. They discuss possibilities. They discuss scope. They jot everything down. After all the jotting, they start working.
+
+And then it takes a truly, crucially insane amount of time to execute.
+
+Then comes review. And if you are building on top of existing systems, especially money-making systems, you get extensive reviews. Multiple rounds. Back and forth. Weeks sometimes.
+
+Then it ships. Then the feedback loop continues. More ideas. More documents. More discussions. More execution. More review.
+
+The whole process was slow. Painfully slow. That is why software companies were not moving fast. The middle of the work, the actual building, absorbed most of the time and energy.
+
+## What Changed With AI
+
+But with AI, especially with this year's changes, something fundamental shifted.
+
+Coding models like Opus or Codex became so insanely good that if someone gives the right context, they can technically do a very complicated job in just a single prompt.
+
+And that is where experience matters.
+
+Building or coding is like the layman's work now. You probably code very well. Someone else can code like crazy good. But 95% of the engineers out there are nowhere close to how these models can code.
+
+Probably 5% or 2% of engineers are insanely good at coding and probably write better code than what AI does. And that is fine. That level of skill is required for handling really heavy systems like trading, streaming, and other critical infrastructure.
+
+But here is the thing: the world does not run only on those systems.
+
+The world runs on so many other things that do not need that kind of criticality at all, especially on the coding level. These systems can have bugs and they still work. There are systems that fail, but they still work. And that is where the speed has come in.
+
+## The Gap Nobody Is Talking About
+
+I was talking to a staff engineer at a fairly huge company in the US. They are adopting AI like crazy. Throughout the last year, their team shipped 100% of the code written by AI.
+
+And it works.
+
+They have created their own orchestration platforms and internal tooling. But they still have one very crucial pain point.
+
+When a staff engineer or a senior engineer who actually knew how to code before AI came in, who actually went through the rigorous process of understanding concepts and building mental models, when they use AI, they can do a very complicated job in a single prompt or two.
+
+But the same thing cannot be done by a junior engineer.
+
+Junior engineers keep getting stuck. They keep writing bad code through AI. Not writing code themselves, but through AI, they produce bad code.
+
+Why?
+
+Because the practices that have been followed in the organization for years are not recorded anywhere. Junior engineers have no idea how things actually work. They do not understand the why behind the patterns. They do not know what was tried before and failed. They do not know which tradeoffs were made and why.
+
+So they cannot prompt properly. They cannot give the right context. They cannot ship in time. There are more bugs. Retrospective meetings become painful. Bug meetings become archaeological expeditions.
+
+> The product is becoming a black box. Not because of AI, but because of missing context.
+
+## The Real Problem With Agents Today
+
+I was also talking to a couple of startups dealing with this exact issue. One of the founders mentioned something that stuck with me.
+
+They are paying for all the AI tools. They are paying for all the max models. They have access to the best infrastructure available.
+
+But still, agents are not delivering the speed they expected.
+
+The bar should be set so much higher than whatever people are doing right now. The thing should become autonomous. We should see a world where we are ideating, we are creating, we are the creators. The executors, the builders, the coders of the world, that is AI.
+
+And that is where everything changes. That is where real innovation starts happening.
+
+But we are not there yet. And the reason is not the models.
+
+## The Power of a System of Record
+
+Here is where it gets interesting.
+
+There is a huge amount of power in how any team can adopt AI to a certain extent that they do not have to jump between different apps anymore. But only if they have a system of record.
+
+This is the main point.
+
+If there is a way where you can actually track all the irreversible actions that any senior person, or the founder, or someone else took over a period of time. If we can track what went right. What decision went wrong.
+
+And this is cross-product. Across customers. Across engineering.
+
+Think about what this actually means:
+
+- Which features that customers wanted actually worked?
+- Which features that customers wanted did not work?
+- Which email that someone sent actually landed and got a response?
+- Which email that someone else sent fell flat?
+- Which PR that got merged worked well in production?
+- Which things that did not get merged, what was actually wrong with them?
+
+If you can capture all of this, you have something powerful. You have context that compounds.
+
+> That is where the power of a system of record comes in. That is where the power of context lives.
+
+## The Platform That Does Not Exist Yet
+
+There is not a single platform today that can actually manage this context.
+
+And I think that is the major building block of where we should be heading. That is where all the AI companies and all the startups should actually set the bar. Only then can they achieve true agency.
+
+Let me explain why this matters so much.
+
+Right now, every tool captures a slice of what happens:
+
+- Git captures code changes
+- Linear captures tickets and intent
+- Slack captures conversations
+- Notion captures documents
+- CRMs capture customer interactions
+
+But none of them capture the why behind irreversible decisions. None of them connect the dots across all these systems. None of them build a queryable, learnable record of what worked and what did not.
+
+So when a junior engineer sits down to build something, they are starting from scratch. They have the model. They have the tools. But they do not have the context.
+
+And without context, even the best model produces mediocre output.
+
+## The Git Analogy, But Deeper
+
+Think about what git actually solved for code.
+
+Before git, code was chaos. Nobody knew who changed what. Rolling back was a nightmare. Collaboration was painful.
+
+Git introduced a system of record for code. Every change tracked. Every author known. Every commit message capturing intent.
+
+Now we need the same thing for decisions.
+
+Not just code decisions. All the irreversible actions that shape how a product evolves:
+
+- Why did we build this feature and not that one?
+- Why did we choose this architecture?
+- Why did we send this email to that customer?
+- Why did we reject this PR?
+- Why did we hire this person?
+- Why did we pivot away from that market?
+
+These decisions compound. They shape everything that comes after. But we do not record them. We do not make them queryable. We do not learn from them systematically.
+
+> We have version control for code. We have nothing for the decisions that actually matter.
+
+## What This Enables
+
+Imagine a world where this system of record exists.
+
+A junior engineer joins the team. Instead of spending months absorbing tribal knowledge through osmosis, they can query the decision history.
+
+"Why do we structure our APIs this way?"
+
+The system shows them the decision from two years ago. The context at the time. The alternatives considered. The tradeoffs made. The outcome that resulted.
+
+Now they understand. Now they can prompt properly. Now they can build on top of what came before instead of accidentally rebuilding what was already tried and failed.
+
+An agent is about to send an email to a customer. Instead of guessing what tone to use, it queries the decision history.
+
+"What kind of emails have worked with this customer segment before?"
+
+The system shows patterns. This approach got responses. This approach did not. This phrasing landed well. This phrasing fell flat.
+
+Now the agent has context. Now it can make a better decision. Now it can act with confidence.
+
+A founder is about to make a product decision. Instead of relying purely on intuition, they query the decision history.
+
+"What happened the last three times we prioritized speed over reliability?"
+
+The system shows the outcomes. Two times it worked. One time it caused a major incident. Here is what was different about the contexts.
+
+Now the decision is informed. Not just by gut feel, but by actual precedent.
+
+## The Bar We Should Be Setting
+
+The bar should be this: true autonomy.
+
+Not agents that need constant babysitting. Not AI that produces code you have to review line by line. Not tools that make you faster at the same old process.
+
+True autonomy means:
+
+- Agents that understand context without being told every time
+- Systems that learn from what worked and what did not
+- Decisions that are auditable and improvable
+- Junior engineers who can operate at senior level because the context is available
+- Founders who can move fast because the institutional memory is captured
+
+This is not science fiction. This is infrastructure that needs to be built.
+
+> We should see a world where we are ideating, we are creating, we are the creators. The executors, the builders, the coders of the world is AI.
+
+But to get there, we need the missing layer. The system of record for context. The git for decisions.
+
+## What Needs to Happen
+
+There are still so many things to do. So many things to build around AI to make sure all of this works.
+
+The models are ready. The compute is available. The tools are proliferating.
+
+What is missing is the connective tissue. The layer that captures why things happened, not just what happened. The layer that makes context available to everyone, human and AI alike.
+
+Whoever builds this layer will unlock the next phase of what is possible.
+
+Because right now, we have incredibly powerful models operating with incredibly thin context. That is like having a Formula 1 engine in a car with no steering wheel and no rearview mirror.
+
+The speed is there. The control is not.
+
+> The platform that manages context across customers, engineering, and decisions, that is the real unlock. That is where true agency lives.
+
+## The Bottom Line
+
+Software work changed. The middle collapsed. Building is no longer the bottleneck.
+
+But we traded one bottleneck for another.
+
+Now the bottleneck is context. The practices that nobody recorded. The decisions that nobody tracked. The why behind irreversible actions that lives only in the heads of people who were there.
+
+Fix that, and you fix the gap between where we are and where we should be.
+
+The junior engineer who cannot prompt properly? They do not need better prompting skills. They need access to the context that senior engineers have absorbed over years.
+
+The agents that are not delivering speed? They do not need better models. They need a system of record to learn from.
+
+The startups paying for all the tools but not seeing results? They do not need more tools. They need the layer that connects everything and captures what matters.
+
+This is the work. This is what needs to be built.
+
+And whoever builds it will define how the next decade of software work actually happens.
+
+Cheers.
