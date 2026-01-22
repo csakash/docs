@@ -1,0 +1,127 @@
+---
+title: "I Built an AI Coworker in 2 Days"
+---
+
+Everyone is talking about AI agents. Claude Code this. Cowork that. Automation everywhere.
+
+I kept seeing these posts and wondered. Who is actually using this stuff daily?
+
+So I tried it seriously. And I realized something.
+
+Most of these tools are solving the wrong problem for me.
+
+They're coding agents. They write code to do things. But most of my daily work isn't coding. It's checking Slack. Reading emails. Updating Linear. Writing summaries. Creating tickets. Sending status updates.
+
+Using a coding agent for this means generating Python scripts to call APIs that already exist. More tokens. More latency. More things that can break.
+
+That felt backwards.
+
+So I built what I actually wanted.
+
+## What I Actually Wanted
+
+A coworker that talks to my tools directly.
+
+Not an agent that writes code to talk to my tools. An agent that just uses them. Gmail. Slack. Linear. GitHub. Notion. Calendar. Direct integration. Simple tool calls.
+
+I wanted to say "What happened in Slack today?" and have it check Slack. Not write a script that checks Slack.
+
+I wanted to dump a meeting transcript and have it create Linear tickets. Not generate code that creates Linear tickets.
+
+I wanted it to run in the background for long tasks. I wanted specialized agents for different workflows. I wanted it to cost almost nothing.
+
+So I built it. Took 2 days. Called it Sudosu CLI.
+
+## How It Works
+
+It's a CLI that runs locally. You bring your own API keys.
+
+The key is Composio. It gives you direct tool calls to 100+ apps. Gmail, Slack, Linear, GitHub, Notion, Calendar. The agent decides what to do and calls the right tool. No code generation in between.
+
+You get a generous free tier. Gemini API is free for most usage. Composio gives you 20k+ tool calls per month for free. I've been running this for a week and haven't paid anything.
+
+## What I've Actually Been Doing With It
+
+I had a spreadsheet with 200+ bugs and feature requests. Legacy tracker from before we used Linear. I'd been putting off the migration for months.
+
+Single prompt. "Migrate all these bugs to Linear with proper labels and descriptions."
+
+5 minutes. Done. All 200+ issues created with context preserved.
+
+That alone made the whole thing worth it.
+
+But I kept finding more uses.
+
+I summarize work calls now. Team meetings. Customer calls. I dump the transcript and it creates docs and issues automatically. All from my terminal.
+
+I've created specialized sub-agents. One watches GitHub issues and summarizes what needs attention. One tracks sheet updates for a project I'm running. One handles daily standup prep by pulling from Linear and Slack.
+
+Each agent knows its job. Each agent has its own context. They work like teammates who actually understand what they're supposed to do.
+
+<iframe src="https://www.youtube.com/embed/YyPFqtDYJ0E" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+
+## The Real Insight
+
+Here's what I've realized after a week of using this.
+
+Everyone is using AI tools. But very few people are orchestrating the right workflows.
+
+The magic isn't in the model. The magic is in the context. When you manage context properly, agents start working like you. Not just responding to you. Actually anticipating what you need.
+
+This is the difference between an AI that answers questions and an AI that gets work done.
+
+And in real workflows, you need different models for different tasks. Some things need fast responses. Some things need deep reasoning. Some things need cheap tokens for bulk operations. We've all figured out which model is best for what. The tooling just hasn't caught up.
+
+## What's Coming Next
+
+The more I use this the more ideas I get. This started from a personal pain point. I was tired of custom creating workflows every time something new came up. I wanted something that grows with how I work.
+
+So here's what I'm shipping next.
+
+**Multiple model support with BYOK.** Bring your own keys for different models. Use the right model for the right job. Fast model for quick lookups. Reasoning model for complex analysis. Cheap model for bulk operations.
+
+**Skills layer for agents.** Right now agents are good at general tasks. But I want to teach them specific skills once and have them remember forever. How I like my standup formatted. What our ticket naming convention is. Which Slack channels matter for what topics.
+
+**Action Records.** This is the one I'm most excited about.
+
+Every irreversible action an agent takes should be recorded. Not just logged. Recorded with context. Why did it make that decision? What was the input? What was the outcome?
+
+Over time this becomes a system of record. Not just for debugging. For learning. The agent can look back and see what worked. What didn't. What patterns emerge.
+
+I wrote about this mental model in detail here: https://akashmunshi.com/the-missing-layer-of-ai-in-2026
+
+The short version. We have version control for code. We have nothing for decisions. Action Records is my attempt at fixing that for AI workflows.
+
+**Small paywall on hosted backend.** Right now there's a hosted backend you can use for free. I want to keep this sustainable so I'll add a small paywall. Nothing crazy. Just enough to cover costs and keep it running.
+
+## Why I Opensourced It
+
+I could have kept this private. Built a SaaS. Charged monthly fees.
+
+But I've been on the other side. Paying for tools I barely use. Getting locked into workflows I can't customize. Hitting limits right when I need the tool most.
+
+I wanted something different.
+
+So the whole thing is opensource. You can run it locally in 5 minutes. Your keys. Your data. Your control.
+
+If the hosted backend doesn't work for you, run your own. If my agents don't fit your workflow, create your own. If you want to add integrations I haven't built, contribute them.
+
+The core will always be free.
+
+## Try It
+
+If you're spending hours on operational work that should take minutes. If you're copy pasting between tools all day. If you've tried AI assistants and found them too chatty and not action oriented enough.
+
+Give it a try.
+
+pip install sudosu
+
+GitHub: https://github.com/csakash/sudosu-cli
+
+PyPI: https://pypi.org/project/sudosu/
+
+It's rough around the edges. I built it in 2 days. But it works. And it's getting better every day because I use it every day.
+
+The best tools are the ones you build for yourself and then realize others might want too.
+
+Cheers.
